@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Frontend Developer</title>
+  <meta name="description" content="Portfolio of Your Name, a frontend developer who builds fast, accessible websites.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#work">Skip to projects</a>
+
+  <header class="top">
+    <a class="logo" href="#top">Your Name</a>
+    <nav aria-label="Main">
+      <a href="#work">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO: change the name and sentence below -->
+    <section class="hero">
+      <h1>Hi, I'm Your Name. I build web pages that are clear, fast and easy to use.</h1>
+      <p class="lead">I'm a frontend developer working with HTML, CSS and JavaScript. I'm open to junior roles and freelance projects.</p>
+      <p class="actions">
+        <a class="btn" href="#work">See my projects</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </p>
+
+      <div class="picker" role="group" aria-label="Choose an accent color">
+        <span id="picker-label">Pick an accent color. Your choice is saved in this browser.</span>
+        <button type="button" data-accent="cobalt" aria-label="Cobalt" aria-pressed="true"></button>
+        <button type="button" data-accent="moss" aria-label="Moss" aria-pressed="false"></button>
+        <button type="button" data-accent="plum" aria-label="Plum" aria-pressed="false"></button>
+        <button type="button" data-accent="amber" aria-label="Amber" aria-pressed="false"></button>
+      </div>
+    </section>
+
+    <!-- PROJECTS: copy one <article> block per project -->
+    <section id="work">
+      <h2>Projects</h2>
+      <article class="project">
+        <h3>Weather Dashboard</h3>
+        <p>Search any city and see a 5-day forecast. I built it to practice fetching data from an API and handling errors.</p>
+        <p class="meta">HTML, CSS, JavaScript, Open-Meteo API</p>
+        <p class="links"><a href="https://example.com">Live site</a> <a href="https://github.com/your-username/weather-dashboard">Source code</a></p>
+      </article>
+      <article class="project">
+        <h3>Recipe Finder</h3>
+        <p>Filter recipes by ingredient and save favorites. The layout works from phone to desktop.</p>
+        <p class="meta">HTML, CSS Grid, JavaScript, localStorage</p>
+        <p class="links"><a href="https://example.com">Live site</a> <a href="https://github.com/your-username/recipe-finder">Source code</a></p>
+      </article>
+      <article class="project">
+        <h3>Personal Blog Template</h3>
+        <p>A responsive blog layout with a dark mode that follows the visitor's system setting.</p>
+        <p class="meta">HTML, CSS custom properties, accessibility</p>
+        <p class="links"><a href="https://example.com">Live site</a> <a href="https://github.com/your-username/blog-template">Source code</a></p>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <dl class="skills">
+        <dt>Building</dt><dd>HTML, CSS (Flexbox, Grid), JavaScript (ES6+)</dd>
+        <dt>Tools</dt><dd>Git and GitHub, VS Code, Chrome DevTools, Figma basics</dd>
+        <dt>Practices</dt><dd>Responsive design, accessibility, semantic HTML</dd>
+        <dt>Learning now</dt><dd>React, TypeScript</dd>
+      </dl>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I started learning to code in 2025 and fell for frontend work because I like seeing my changes appear instantly in the browser. Before this I worked in [your previous field], which taught me to listen to users and explain things clearly.</p>
+      <p>When I'm not coding I [your hobby]. Replace this paragraph with your own story, in your own words.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>The best way to reach me is email. I usually reply within two days.</p>
+      <p class="links big">
+        <a href="mailto:you@example.com">you@example.com</a>
+        <a href="https://github.com/your-username">GitHub</a>
+        <a href="https://www.linkedin.com/in/your-username">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built by hand with HTML, CSS and JavaScript. No frameworks.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
