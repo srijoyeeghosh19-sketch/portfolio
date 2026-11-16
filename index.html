@@ -3,97 +3,428 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name | Frontend Developer</title>
-  <meta name="description" content="Portfolio of Your Name, a frontend developer who builds fast, accessible websites.">
+  <title>Srijoyee Ghosh — Frontend Developer & Creative Coder</title>
+  <meta name="description" content="Portfolio of Srijoyee Ghosh, a frontend developer and programmer who builds fast, responsive, and aesthetically pleasing websites.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip" href="#work">Skip to projects</a>
+  <!-- Ambient aesthetic background glow -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
 
-  <header class="top">
-    <a class="logo" href="#top">Your Name</a>
-    <nav aria-label="Main">
-      <a href="#work">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+  <!-- Floating Island Header -->
+  <header class="floating-nav-wrap">
+    <nav class="nav-island" aria-label="Main Navigation">
+      <a class="nav-brand" href="#top">
+        <span class="brand-monogram">SG</span>
+        <span class="brand-name">Srijoyee</span>
+      </a>
+      <div class="nav-links">
+        <a href="#work">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-contact-btn">Connect</a>
+      </div>
     </nav>
   </header>
 
   <main id="top">
-    <!-- HERO: change the name and sentence below -->
+    <!-- HERO SECTION -->
     <section class="hero">
-      <h1>Hi, I'm Your Name. I build web pages that are clear, fast and easy to use.</h1>
-      <p class="lead">I'm a frontend developer working with HTML, CSS and JavaScript. I'm open to junior roles and freelance projects.</p>
-      <p class="actions">
-        <a class="btn" href="#work">See my projects</a>
-        <a class="btn ghost" href="#contact">Get in touch</a>
+      <div class="status-pill">
+        <span class="pulse-indicator"></span>
+        <span>Available for internships & junior roles</span>
+      </div>
+
+      <h1 class="hero-title">
+        Crafting web experiences that are
+        <span class="highlight-word">fast</span>,
+        <span class="serif-italic">intuitive</span>
+        and visually <span class="gradient-text">aesthetic</span>.
+      </h1>
+
+      <p class="hero-sub">
+        Hi, I'm <strong>Srijoyee Ghosh</strong>. A frontend developer and programmer blending engineering logic with design sensibility in HTML, CSS, JavaScript, C, and Java.
       </p>
 
-      <div class="picker" role="group" aria-label="Choose an accent color">
-        <span id="picker-label">Pick an accent color. Your choice is saved in this browser.</span>
-        <button type="button" data-accent="cobalt" aria-label="Cobalt" aria-pressed="true"></button>
-        <button type="button" data-accent="moss" aria-label="Moss" aria-pressed="false"></button>
-        <button type="button" data-accent="plum" aria-label="Plum" aria-pressed="false"></button>
-        <button type="button" data-accent="amber" aria-label="Amber" aria-pressed="false"></button>
+      <div class="hero-actions">
+        <a class="btn primary-btn" href="#work">
+          <span>Explore Selected Work</span>
+          <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </a>
+        <a class="btn secondary-btn" href="#contact">Get in Touch</a>
+      </div>
+
+      <!-- Quick Feature Pillars -->
+      <div class="hero-pillars">
+        <div class="pillar-card">
+          <span class="pillar-icon">⚡</span>
+          <div class="pillar-info">
+            <strong>Clean & Semantic</strong>
+            <span>Zero bloat, accessible code</span>
+          </div>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-icon">💻</span>
+          <div class="pillar-info">
+            <strong>Core Foundations</strong>
+            <span>HTML/CSS/JS • C • Java</span>
+          </div>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-icon">🎨</span>
+          <div class="pillar-info">
+            <strong>Design Sensibility</strong>
+            <span>Visual art & eye for detail</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Theme Palette Capsule -->
+      <div class="theme-capsule" role="group" aria-label="Accent Palette Switcher">
+        <div class="capsule-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 0 0 20v-20z"/></svg>
+          <span>Choose your aesthetic vibe:</span>
+        </div>
+        <div class="palette-swatches">
+          <button type="button" data-accent="yellow-blue" aria-label="Sunflower & Cobalt" aria-pressed="true" title="Sunflower & Cobalt"></button>
+          <button type="button" data-accent="cobalt" aria-label="Deep Royal Blue" aria-pressed="false" title="Deep Royal Blue"></button>
+          <button type="button" data-accent="sunflower" aria-label="Bright Golden Sun" aria-pressed="false" title="Bright Golden Sun"></button>
+          <button type="button" data-accent="cyan-gold" aria-label="Cyan & Amber" aria-pressed="false" title="Cyan & Amber"></button>
+          <button type="button" data-accent="navy-yellow" aria-label="Midnight Navy & Gold" aria-pressed="false" title="Midnight Navy & Gold"></button>
+        </div>
       </div>
     </section>
 
-    <!-- PROJECTS: copy one <article> block per project -->
-    <section id="work">
-      <h2>Projects</h2>
-      <article class="project">
-        <h3>Weather Dashboard</h3>
-        <p>Search any city and see a 5-day forecast. I built it to practice fetching data from an API and handling errors.</p>
-        <p class="meta">HTML, CSS, JavaScript, Open-Meteo API</p>
-        <p class="links"><a href="https://example.com">Live site</a> <a href="https://github.com/your-username/weather-dashboard">Source code</a></p>
-      </article>
-      <article class="project">
-        <h3>Recipe Finder</h3>
-        <p>Filter recipes by ingredient and save favorites. The layout works from phone to desktop.</p>
-        <p class="meta">HTML, CSS Grid, JavaScript, localStorage</p>
-        <p class="links"><a href="https://example.com">Live site</a> <a href="https://github.com/your-username/recipe-finder">Source code</a></p>
-      </article>
-      <article class="project">
-        <h3>Personal Blog Template</h3>
-        <p>A responsive blog layout with a dark mode that follows the visitor's system setting.</p>
-        <p class="meta">HTML, CSS custom properties, accessibility</p>
-        <p class="links"><a href="https://example.com">Live site</a> <a href="https://github.com/your-username/blog-template">Source code</a></p>
-      </article>
+    <!-- FEATURED PROJECTS -->
+    <section id="work" class="section-container">
+      <div class="section-header">
+        <span class="section-badge">PORTFOLIO SHOWCASE</span>
+        <h2>Selected Projects</h2>
+        <p class="section-lead">Functional, responsive, and thoughtfully designed applications built from scratch.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Bake Cake -->
+        <article class="aesthetic-card project-card">
+          <div class="card-visual visual-bakery">
+            <div class="mockup-header">
+              <span class="mock-dot red"></span>
+              <span class="mock-dot yellow"></span>
+              <span class="mock-dot green"></span>
+              <span class="mock-address">bakecake.studio</span>
+            </div>
+            <div class="mockup-content">
+              <div class="bakery-preview">
+                <span class="preview-badge">🧁 Artisanal Treats</span>
+                <h4>Handcrafted Cakes & Desserts</h4>
+                <div class="preview-pills">
+                  <span>Sweet</span><span>Fresh</span><span>Custom Orders</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="category-pill">WEB DESIGN & STOREFRONT</span>
+              <span class="meta-year">2026</span>
+            </div>
+            <h3 class="card-title">Bake Cake — Boutique Bakery</h3>
+            <p class="card-desc">An aesthetic storefront landing page crafted with custom typography, responsive product showcase grids, seamless navigation, and engaging call-to-actions.</p>
+            <div class="tech-stack">
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3 Flexbox</span>
+              <span class="tech-pill">Google Fonts</span>
+              <span class="tech-pill">Responsive UI</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/srijoyeeghosh19-sketch" target="_blank" rel="noopener" class="card-link">
+                <span>View Source</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+              <a href="#contact" class="card-link preview-link">
+                <span>Inquire Demo</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Weather Dashboard -->
+        <article class="aesthetic-card project-card">
+          <div class="card-visual visual-weather">
+            <div class="mockup-header">
+              <span class="mock-dot red"></span>
+              <span class="mock-dot yellow"></span>
+              <span class="mock-dot green"></span>
+              <span class="mock-address">weather.app/forecast</span>
+            </div>
+            <div class="mockup-content">
+              <div class="weather-preview">
+                <div class="weather-now">
+                  <span class="temp">24°C</span>
+                  <span class="condition">⛅ Partly Cloudy</span>
+                </div>
+                <div class="forecast-row">
+                  <div class="f-item"><span>Wed</span><span>25°</span></div>
+                  <div class="f-item"><span>Thu</span><span>22°</span></div>
+                  <div class="f-item"><span>Fri</span><span>26°</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="category-pill">WEB APPLICATION & API</span>
+              <span class="meta-year">2026</span>
+            </div>
+            <h3 class="card-title">Dynamic Weather Dashboard</h3>
+            <p class="card-desc">An interactive weather tracking web app featuring global city search, multi-day forecasting, live weather condition metrics, and robust API error recovery.</p>
+            <div class="tech-stack">
+              <span class="tech-pill">JavaScript ES6+</span>
+              <span class="tech-pill">REST APIs</span>
+              <span class="tech-pill">Async/Await</span>
+              <span class="tech-pill">CSS Custom Variables</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/srijoyeeghosh19-sketch" target="_blank" rel="noopener" class="card-link">
+                <span>View Source</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+              <a href="#contact" class="card-link preview-link">
+                <span>Live Demo</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Developer Portfolio & Theme System -->
+        <article class="aesthetic-card project-card">
+          <div class="card-visual visual-portfolio">
+            <div class="mockup-header">
+              <span class="mock-dot red"></span>
+              <span class="mock-dot yellow"></span>
+              <span class="mock-dot green"></span>
+              <span class="mock-address">srijoyee.dev</span>
+            </div>
+            <div class="mockup-content">
+              <div class="theme-preview">
+                <span class="preview-badge">✨ Dynamic CSS Tokens</span>
+                <div class="theme-dots-row">
+                  <span class="t-dot c-1"></span>
+                  <span class="t-dot c-2"></span>
+                  <span class="t-dot c-3"></span>
+                  <span class="t-dot c-4"></span>
+                </div>
+                <div class="theme-bar"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="category-pill">SYSTEM & DESIGN TOKENS</span>
+              <span class="meta-year">2026</span>
+            </div>
+            <h3 class="card-title">Minimalist Portfolio & Theme Engine</h3>
+            <p class="card-desc">An ultra-fast, accessible portfolio showcasing lightweight vanilla JavaScript architecture, persistent color schemes, and seamless responsive typography.</p>
+            <div class="tech-stack">
+              <span class="tech-pill">Semantic HTML</span>
+              <span class="tech-pill">Vanilla JavaScript</span>
+              <span class="tech-pill">CSS Variables</span>
+              <span class="tech-pill">a11y</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/srijoyeeghosh19-sketch" target="_blank" rel="noopener" class="card-link">
+                <span>View Source</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+              <a href="#top" class="card-link preview-link">
+                <span>Current View</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <dl class="skills">
-        <dt>Building</dt><dd>HTML, CSS (Flexbox, Grid), JavaScript (ES6+)</dd>
-        <dt>Tools</dt><dd>Git and GitHub, VS Code, Chrome DevTools, Figma basics</dd>
-        <dt>Practices</dt><dd>Responsive design, accessibility, semantic HTML</dd>
-        <dt>Learning now</dt><dd>React, TypeScript</dd>
-      </dl>
+    <!-- SKILLS MATRIX (Bento Grid) -->
+    <section id="skills" class="section-container">
+      <div class="section-header">
+        <span class="section-badge">CAPABILITIES</span>
+        <h2>Skills & Technologies</h2>
+        <p class="section-lead">A mix of fundamental computer science, programming logic, and modern frontend design.</p>
+      </div>
+
+      <div class="skills-bento">
+        <!-- Frontend -->
+        <div class="aesthetic-card skill-card">
+          <div class="skill-card-head">
+            <span class="skill-icon">🎨</span>
+            <h3>Frontend Development</h3>
+          </div>
+          <p class="skill-desc">Building responsive, accessible, pixel-clean interfaces with modern web standards.</p>
+          <div class="skill-pills">
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3 & SASS</span>
+            <span class="pill">Flexbox & Grid</span>
+            <span class="pill">JavaScript (ES6+)</span>
+            <span class="pill">Responsive Layouts</span>
+            <span class="pill">DOM Manipulation</span>
+          </div>
+        </div>
+
+        <!-- Programming Languages -->
+        <div class="aesthetic-card skill-card">
+          <div class="skill-card-head">
+            <span class="skill-icon">⚡</span>
+            <h3>Core Programming</h3>
+          </div>
+          <p class="skill-desc">Foundational software engineering with object-oriented and structured paradigms.</p>
+          <div class="skill-pills">
+            <span class="pill highlight-pill">C Programming</span>
+            <span class="pill highlight-pill">Java</span>
+            <span class="pill">OOP Concepts</span>
+            <span class="pill">Algorithms & Logic</span>
+            <span class="pill">Debugging</span>
+          </div>
+        </div>
+
+        <!-- Tools & Environment -->
+        <div class="aesthetic-card skill-card">
+          <div class="skill-card-head">
+            <span class="skill-icon">🛠️</span>
+            <h3>Tools & Workflow</h3>
+          </div>
+          <p class="skill-desc">Modern developer tooling for version control, editing, and deployment.</p>
+          <div class="skill-pills">
+            <span class="pill">Git</span>
+            <span class="pill">GitHub</span>
+            <span class="pill">VS Code</span>
+            <span class="pill">BlueJ</span>
+            <span class="pill">Chrome DevTools</span>
+            <span class="pill">GitHub Pages</span>
+          </div>
+        </div>
+
+        <!-- Mindset & Strengths -->
+        <div class="aesthetic-card skill-card">
+          <div class="skill-card-head">
+            <span class="skill-icon">✨</span>
+            <h3>Creative & Mindset</h3>
+          </div>
+          <p class="skill-desc">Where creativity meets analytical precision to produce meaningful software.</p>
+          <div class="skill-pills">
+            <span class="pill">Visual Sketching</span>
+            <span class="pill">Accessibility (a11y)</span>
+            <span class="pill">Clean Code</span>
+            <span class="pill">Continuous Learning</span>
+            <span class="pill">Design Empathy</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>I started learning to code in 2025 and fell for frontend work because I like seeing my changes appear instantly in the browser. Before this I worked in [your previous field], which taught me to listen to users and explain things clearly.</p>
-      <p>When I'm not coding I [your hobby]. Replace this paragraph with your own story, in your own words.</p>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-container">
+      <div class="section-header">
+        <span class="section-badge">BACKGROUND</span>
+        <h2>About Srijoyee</h2>
+      </div>
+
+      <div class="about-bento">
+        <div class="aesthetic-card about-story">
+          <span class="quote-mark">“</span>
+          <p class="about-lead">I believe the best websites feel effortless to explore, visually balanced, and built on rock-solid fundamentals.</p>
+          <p class="about-text">
+            My journey began with learning core programming principles through C and Java, which taught me discipline, logical thinking, and clean problem solving. When I brought that mindset to frontend development, I fell in love with how quickly code transforms into living, visual user experiences.
+          </p>
+          <p class="about-text">
+            Outside of coding, I'm passionate about sketching and visual arts. Having a creative eye allows me to notice micro-details—from harmonious spacing and color balances to smooth interaction states—that make digital products feel polished and memorable.
+          </p>
+        </div>
+
+        <div class="aesthetic-card about-highlights">
+          <h3>Quick Insights</h3>
+          <ul class="highlight-list">
+            <li>
+              <span class="hl-badge">🎯 Goal</span>
+              <div>
+                <strong>Continuous Growth</strong>
+                <p>Eager to contribute to creative web teams, learn modern frameworks, and craft high-impact web products.</p>
+              </div>
+            </li>
+            <li>
+              <span class="hl-badge">☕ Coding Habit</span>
+              <div>
+                <strong>Clean & Readable First</strong>
+                <p>Writing organized, commented, and standards-compliant code that is a pleasure to maintain.</p>
+              </div>
+            </li>
+            <li>
+              <span class="hl-badge">🖌️ Creative Side</span>
+              <div>
+                <strong>Sketching & Illustration</strong>
+                <p>Transferring visual composition, contrast, and balance principles directly into web interfaces.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>The best way to reach me is email. I usually reply within two days.</p>
-      <p class="links big">
-        <a href="mailto:you@example.com">you@example.com</a>
-        <a href="https://github.com/your-username">GitHub</a>
-        <a href="https://www.linkedin.com/in/your-username">LinkedIn</a>
-      </p>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-container">
+      <div class="aesthetic-card contact-card">
+        <span class="section-badge">GET IN TOUCH</span>
+        <h2 class="contact-title">Let's build something <span class="serif-italic">extraordinary</span> together.</h2>
+        <p class="contact-sub">Have a project in mind, an opportunity, or just want to discuss code and design? My inbox is always open.</p>
+
+        <!-- Direct Email Pill with Interactive Copy -->
+        <div class="email-copy-wrap">
+          <div class="email-pill" id="email-pill" title="Click to copy email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span class="email-text" id="email-address">srijoyeeghosh19@gmail.com</span>
+            <button type="button" class="copy-btn" id="copy-btn" aria-label="Copy email address">
+              <span id="copy-text">Copy</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Social Connect Links -->
+        <div class="social-links-row">
+          <a href="https://github.com/srijoyeeghosh19-sketch" target="_blank" rel="noopener" class="social-pill">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>GitHub Profile</span>
+          </a>
+          <a href="https://www.linkedin.com/in/srijoyee-ghosh" target="_blank" rel="noopener" class="social-pill">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <span>LinkedIn Network</span>
+          </a>
+          <a href="mailto:srijoyeeghosh19@gmail.com" class="social-pill highlight-social">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <span>Direct Email</span>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>Built by hand with HTML, CSS and JavaScript. No frameworks.</p>
+  <footer class="aesthetic-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">SG</span>
+        <p>&copy; 2026 Srijoyee Ghosh. Crafted with passion, clean code, and zero frameworks.</p>
+      </div>
+      <a href="#top" class="back-to-top" aria-label="Back to top">
+        <span>Back to Top</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+      </a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
